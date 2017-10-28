@@ -2,3 +2,9 @@ Testing for internet access
 Some first boot error occurred and the system if not properly setup. Check for internet access and re-run /etc/pbx_first_boot.sh Press ctrl-alt-f1 to continue. On dedicated 64bit server. I can access the GUI but can't ssh.
 Press ctrl-alt-fi to continue
 
+Untuk mengatasi masalah eror tersebut :
+login : root passwd
+Perintah : vi /etc/sysconfig/network-scripts/ifcfg-eth0
+            Tambahkan : DNS1=x.x.x.x => dns isp anda 
+                        DNS2=x.x.x.x => dns isp anda
+            Simpan dan restart.
